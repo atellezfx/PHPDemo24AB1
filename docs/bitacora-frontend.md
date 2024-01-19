@@ -48,7 +48,7 @@
 	  font-family: 'Sora', Arial, Helvetica, sans-serif;
 	}
     ```
-8. Para levantar el seridor de Angular para desarrollo, ejecutar el siguiente comando desde la carpeta `empleados` del proyecto
+8. Para levantar el seridor de Angular para desarrollo, ejecutar el siguiente comando desde la carpeta `dogtorpet` del proyecto
 
     ```bash
     $ ng serve
