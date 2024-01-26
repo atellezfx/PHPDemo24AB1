@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MascotaComponent } from "./components/mascota/mascota.component";
-import { LoginComponent } from "./components/login/login.component";
+import { LoginService } from './services/login.service';
 
 @Component({
     selector: 'app-root',
@@ -12,5 +11,13 @@ import { LoginComponent } from "./components/login/login.component";
     imports: [CommonModule, RouterOutlet]
 })
 export class AppComponent {
+
   title = 'DogtorPET';
+
+  constructor( public loginSvc:LoginService ) { }
+
+  public cerrarSesion(): void {
+    this.loginSvc.logout();
+  }
+
 }
